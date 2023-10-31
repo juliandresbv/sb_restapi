@@ -1,9 +1,9 @@
 package com.sb_restapi.adapter.controllers.person.dtos;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Optional;
 import java.time.LocalDate;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class UpdatePersonDto {
   private Optional<String> name = Optional.empty();

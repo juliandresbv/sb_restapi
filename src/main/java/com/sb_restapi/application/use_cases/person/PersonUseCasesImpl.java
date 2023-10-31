@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Optional;
 
+import com.sb_restapi.adapter.exceptions.HttpException;
+import com.sb_restapi.domain.models.person.PersonModel;
+import com.sb_restapi.framework.db.entities.person.PersonEntity;
 import com.sb_restapi.framework.db.entities.person.QPersonEntity;
 import com.sb_restapi.adapter.controllers.person.dtos.CreatePersonDto;
 import com.sb_restapi.adapter.controllers.person.dtos.UpdatePersonDto;
+import com.sb_restapi.domain.repositories.person.interfaces.PersonRepository;
+import com.sb_restapi.application.use_cases.person.interfaces.PersonUseCases;
 import com.sb_restapi.adapter.controllers.person.responses.CreatePersonResponse;
 import com.sb_restapi.adapter.controllers.person.responses.UpdatePersonResponse;
-import com.sb_restapi.adapter.exceptions.HttpException;
-import com.sb_restapi.application.use_cases.person.interfaces.PersonUseCases;
-import com.sb_restapi.domain.models.person.PersonModel;
-import com.sb_restapi.domain.repositories.person.interfaces.PersonRepository;
-import com.sb_restapi.framework.db.entities.person.PersonEntity;
 
 @Component("PersonUseCasesImpl")
 public class PersonUseCasesImpl implements PersonUseCases {

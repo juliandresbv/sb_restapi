@@ -9,11 +9,11 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
 import org.hibernate.annotations.UuidGenerator;
 
-import com.sb_restapi.domain.models.person.PersonModel;
-
 import java.util.List;
 import java.time.LocalDate;
 import java.util.stream.Collectors;
+
+import com.sb_restapi.domain.models.person.PersonModel;
 
 @Entity
 @Table(name = "persons")

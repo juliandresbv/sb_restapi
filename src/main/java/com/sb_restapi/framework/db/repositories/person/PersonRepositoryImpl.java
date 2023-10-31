@@ -9,9 +9,9 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 
 import java.util.List;
 
+import com.sb_restapi.framework.db.entities.person.PersonEntity;
 import com.sb_restapi.framework.db.entities.person.QPersonEntity;
 import com.sb_restapi.domain.repositories.person.interfaces.PersonRepositoryExtension;
-import com.sb_restapi.framework.db.entities.person.PersonEntity;
 
 @Repository
 public class PersonRepositoryImpl extends QuerydslRepositorySupport implements PersonRepositoryExtension {

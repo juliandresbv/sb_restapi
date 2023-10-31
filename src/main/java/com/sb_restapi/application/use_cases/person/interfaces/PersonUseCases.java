@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.sb_restapi.domain.models.person.PersonModel;
 import com.sb_restapi.adapter.controllers.person.dtos.CreatePersonDto;
 import com.sb_restapi.adapter.controllers.person.dtos.UpdatePersonDto;
 import com.sb_restapi.adapter.controllers.person.responses.CreatePersonResponse;
 import com.sb_restapi.adapter.controllers.person.responses.UpdatePersonResponse;
-import com.sb_restapi.domain.models.person.PersonModel;
 
 @Component
 public interface PersonUseCases {
