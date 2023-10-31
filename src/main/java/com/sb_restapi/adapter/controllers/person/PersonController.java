@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,7 +23,7 @@ import com.sb_restapi.adapter.controllers.person.responses.UpdatePersonResponse;
 public class PersonController {
   private final PersonUseCases personUseCases;
 
-  public PersonController(@Qualifier("PersonUseCasesImpl") PersonUseCases personUseCases) {
+  public PersonController(PersonUseCases personUseCases) {
     this.personUseCases = personUseCases;
   }
 

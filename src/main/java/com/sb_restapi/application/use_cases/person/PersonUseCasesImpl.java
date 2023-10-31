@@ -1,7 +1,7 @@
 package com.sb_restapi.application.use_cases.person;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,7 +17,7 @@ import com.sb_restapi.application.use_cases.person.interfaces.PersonUseCases;
 import com.sb_restapi.adapter.controllers.person.responses.CreatePersonResponse;
 import com.sb_restapi.adapter.controllers.person.responses.UpdatePersonResponse;
 
-@Component("PersonUseCasesImpl")
+@Service
 public class PersonUseCasesImpl implements PersonUseCases {
   private final PersonRepository personRepository;
 
