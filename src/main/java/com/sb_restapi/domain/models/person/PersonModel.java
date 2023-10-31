@@ -10,22 +10,16 @@ import java.util.stream.Collectors;
 
 import com.sb_restapi.framework.db.entities.person.PersonEntity;
 
+@Getter
+@Setter
 @AllArgsConstructor
 public class PersonModel {
-  @Getter
-  @Setter
   private String id;
 
-  @Getter
-  @Setter
   private String name;
 
-  @Getter
-  @Setter
   private String email;
 
-  @Getter
-  @Setter
   private LocalDate birthDate;
 
   public PersonModel(String name, String email, LocalDate birthDate) {

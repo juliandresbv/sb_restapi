@@ -15,27 +15,22 @@ import java.util.stream.Collectors;
 
 import com.sb_restapi.domain.models.person.PersonModel;
 
+
 @Entity
 @Table(name = "persons")
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class PersonEntity {
   @Id
-  @Getter
-  @Setter
   @UuidGenerator
   private String id;
 
-  @Getter
-  @Setter
   private String name;
 
-  @Getter
-  @Setter
   private String email;
 
-  @Getter
-  @Setter
   private LocalDate birthDate;
 
   public PersonEntity(String name, String email, LocalDate birthDate) {

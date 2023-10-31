@@ -3,7 +3,6 @@ package com.sb_restapi.adapter.exception_handlers;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -16,7 +15,6 @@ import com.sb_restapi.adapter.exceptions.HttpException;
 
 @ControllerAdvice
 public class HttpExceptionHandler {
-  @Autowired
   private DefaultErrorAttributes defaultErrorAttributes;
 
   @ExceptionHandler(HttpException.class)
