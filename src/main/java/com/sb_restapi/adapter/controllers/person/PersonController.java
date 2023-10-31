@@ -34,7 +34,7 @@ public class PersonController {
   }
 
   @GetMapping
-  public List<PersonModel> getAllPersons() throws Exception {
+  public List<PersonModel> getPersons() throws Exception {
     return this.personUseCases.getPersons();
   }
 
@@ -55,7 +55,7 @@ public class PersonController {
   }
 
   @GetMapping("/names")
-  public List<String> getAllPersonsNames() throws Exception {
+  public List<String> getPersonsNames() throws Exception {
     return this.personUseCases.getPersonsNames();
   }
 }
