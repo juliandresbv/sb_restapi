@@ -15,13 +15,12 @@ import java.util.stream.Collectors;
 
 import com.sb_restapi.domain.models.person.PersonModel;
 
-
 @Entity
-@Table(name = "persons")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "persons")
 public class PersonEntity {
   @Id
   @UuidGenerator
